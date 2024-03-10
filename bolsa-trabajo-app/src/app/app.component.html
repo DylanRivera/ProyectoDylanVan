@@ -1,7 +1,8 @@
 <!-- app.component.html -->
 <div class="app">
-  <h1>Bienvenido a mi aplicación</h1>
+  <h1>{{title}}</h1>
 
-  <!-- Aquí es donde puedes usar tus otros componentes -->
-  <app-aplicacion></app-aplicacion>
+  <!-- Aquí es donde Angular insertará el componente de la ruta actual -->
+  <router-outlet></router-outlet>
+  
 </div>
