@@ -1,0 +1,22 @@
+<div class="aplicacion">
+    <h2>Nueva Aplicación</h2>
+    <form [formGroup]="aplicacionForm" (submit)="onSubmit()">
+      <div class="form-group">
+        <label for="candidatoId">Candidato ID:</label>
+        <input type="text" id="candidatoId" formControlName="candidatoId">
+      </div>
+  
+      <div class="form-group">
+        <label for="ofertaTrabajoId">Oferta de Trabajo ID:</label>
+        <input type="text" id="ofertaTrabajoId" formControlName="ofertaTrabajoId">
+      </div>
+  
+      <div class="form-group">
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" formControlName="estado">
+      </div>
+  
+      <button type="submit">Crear Aplicación</button>
+    </form>
+  </div>
+  

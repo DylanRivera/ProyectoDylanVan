@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Bolsa de Trabajo App</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <button (click)="onAplicacionClick()" class="btn btn-primary btn-lg btn-block">Aplicación</button>
+    </div>
+    <div class="col-md-6">
+      <button (click)="onRegistroCandidatoClick()" class="btn btn-primary btn-lg btn-block">Candidato</button>
+    </div>
+  </div>
+  <div *ngIf="selectedComponent === 'aplicacion'">
+    <app-aplicacion></app-aplicacion>
+  </div>
+  <div *ngIf="selectedComponent === 'candidato'">
+    <app-candidato></app-candidato>
+  </div>
+</div>
